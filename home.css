@@ -1,0 +1,334 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    font-family: 'Source Sans Pro', arial, sans-serif;
+    text-decoration: none;
+    color: rgb(130, 108, 108);
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Source Sans Pro', arial, sans-serif;
+}
+
+
+
+/*Menu*/
+.home-menu img{
+    height: 80px;
+}
+
+.home-menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Top Carousel*/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+
+.carousel-overlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.carousel-overlay button{
+    background: white;
+    color: rgb(130, 108, 108);
+    padding: 10px;
+    border-radius: 48px;
+    border: none;
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+}
+
+.title{
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 96px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/*Services*/
+.services{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 750px;
+    align-items: center;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.services-img{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.services-img img{
+    width: 100px;
+    height: 100px;
+}
+
+.services-data{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.services-info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: aliceblue;
+    height: 100%;
+    border: bisque solid 1px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.services-info div{
+    display: flex;
+    flex-direction: column;
+    background: aliceblue;
+}
+
+.services-info div h2 {
+    text-align: center;
+    margin: 5px;
+}
+
+.services-info img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/*Marci*/
+.marci{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.marci img{
+    height: 280px;
+    width: 280px;
+}
+
+/*Get it sold*/
+.sold{
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+    width: 100%;
+}
+
+.carousel2 {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.carousel2 > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel2 > img.active {
+    opacity: 1;
+    filter: blur(5px);
+}
+
+.cl2{
+    width: 90%;
+    height: 90%;
+}
+
+.cl2 > p{
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.carousel3 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel3 img.active {
+    opacity: 1;
+}
+
+.carousel4 {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel4 div {
+    display: none;
+    max-width: 400px;
+    text-align: center;
+}
+
+.carousel4 div.active {
+    display: block;
+}
+
+/*Call or Visit*/
+.call-or-visit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-or-visit img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.call-or-visit h1{
+    font-family: 'Cinzel', Georgia, serif;
+}
+
+.marci{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 25px;
+    margin-bottom: 5px;
+    justify-content: space-around;
+}
+
+.marci-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    align-items: flex-start;
+}
+
+/*Footer*/
+.footer {
+    background: #222;
+    color: #ddd;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+    border-top: darkgoldenrod 5px solid;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer h3,
+.footer h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-about{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    font-size: 14px;
+}
